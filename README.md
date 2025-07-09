@@ -1,2 +1,0 @@
-# Python-Ques
-Basic questions
