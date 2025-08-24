@@ -68,33 +68,26 @@ if(reverse==word):
 else:
     print("No,it is not Palindrome.")
 
-#9-Reverse list:
+#9-list questions:
+"""Reverse list"""
 info=["Pooja","second year","ACEIT","Jaipur"]
 marks=[98,99,89]
 print(info)
 info.reverse()
 print(info)
 
+"""Sort list"""
 info.sort()
 print(info)
 marks.sort()
 print(marks)
 
+"""Merge list"""
 print(info+marks)
-
-l=list(input("Enter any list:"))
-print(l)
-
 
 #10-Star Patterns:
 for i in range(5):
     for j in range(i+1):
-        print("*",end=' ')
-    print()
-
-
-for i in range(5):
-    for j in range(i+1):
         print(" ",end=' ')
     for j in range(i,5):
         print("*",end=' ')
@@ -106,7 +99,6 @@ for i in range(5):
     for j in range(i+1):
         print("*",end=' ')
     print()
-
 
 for i in range(5):
     for j in range(i):
@@ -120,21 +112,15 @@ for i in range(5):
         print("*",end=' ')
     print()
 
-for i in range(5):
-    for j in range(i,5):
-        print("*",end=' ')
-    print()
-
-
-    
-for i in range(6):
+for i in range(4,0,-1):
     for j in range(i):
-        print("*",end=' ')
-    for j in range(i,5):
-        print("",end=' ')
+        print("#",end=" ")
     print()
 
-
+for i in range(4):
+    for j in range(i+1):
+        print("#",end=" ")
+    print()
 
 #11-String Reverse:
 string=input('Enter any string:')
@@ -163,3 +149,4 @@ for i in sen:
     if i not in w:
         w+=i
 print(w)
+
