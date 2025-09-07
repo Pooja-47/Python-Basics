@@ -18,8 +18,10 @@ elif(70<=marks<80):
     print("C")
 elif(60<=marks<70):
     print("D")
-else:
+elif(0<=marks<60):
     print("F")
+else:
+    print("Out of range")
 
 #4-Leap year checker:
 year=int(input("Enter the year:"))
@@ -73,8 +75,13 @@ else:
 info=["Pooja","second year","ACEIT","Jaipur"]
 marks=[98,99,89]
 print(info)
-info.reverse()
+
+info.reverse() #makes changes in original list
 print(info)
+reversed_info = list(reversed(info)) #creates new list
+print(reversed_info)
+
+
 
 """Sort list"""
 info.sort()
@@ -84,6 +91,27 @@ print(marks)
 
 """Merge list"""
 print(info+marks)
+
+"""Most frequent element in list"""
+from collections import Counter
+list1=[1,3,4,45,44,54,44,66,44]
+print(list1)
+res=Counter(list1)
+num=res.most_common(1)[0][0]
+print(num)
+
+def most_freq():   #another approach
+    nums=[23,65,56,56,77,56,89,56]
+    count=0
+    num=nums[0]
+    for i in nums:
+        occ=nums.count(i)
+        if(occ>count):
+            count=occ
+            num=i
+    return num
+print(most_freq())
+
 
 #10-Star Patterns:
 for i in range(5):
@@ -149,4 +177,6 @@ for i in sen:
     if i not in w:
         w+=i
 print(w)
+
+
 
