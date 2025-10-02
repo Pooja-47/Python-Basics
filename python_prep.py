@@ -170,7 +170,7 @@ for i in range(0,len(sent)):
 print("Total vowels:",vowel)
 print('Total consonants:',cons)
 
-#13-Duplicate String:
+ #13-Duplicate String:
 sen=input("Write anything:")
 w=''
 for i in sen:
@@ -178,5 +178,11 @@ for i in sen:
         w+=i
 print(w)
 
-
+#14-Anagram checker
+w1=input("Enter the word: ")
+w2=input("Enter another word: ")
+if sorted(w1)==sorted(w2):
+    print("The two words entered are anagram.")
+else:
+    print("Not anagram.")
 
